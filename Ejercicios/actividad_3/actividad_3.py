@@ -60,15 +60,15 @@ print(filtro_cantidad_precio)
 # Utilizar el método drop() para eliminar la columna "Precio" del DataFrame.
 # Imprimir por consola el DataFrame resultante.
 
-df = df.drop("Precio", axis=1)  
-print(df)
+dfModif = df.drop("Precio", axis=1)  # Creo otro DF donde hago las modificaciones.
+print(dfModif)
 
 # 10. Eliminar los registros donde se repita el valor de la columna "Producto"
 # Utilizar el método drop_duplicates() para eliminar los registros donde se repita el valor de la columna "Producto" del DataFrame.
 # Imprimir por consola el DataFrame resultante.
 
-df = df.drop_duplicates(subset=["Producto"])
-print(df)
+dfModif = df.drop_duplicates(subset=["Producto"])
+print(dfModif)
 
 # Visite la documentación de Pandas para obtener más información sobre el método drop_duplicates():
 # https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop_duplicates.html
